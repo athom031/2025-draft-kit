@@ -161,7 +161,12 @@ function App() {
               style={{ borderLeft: `4px solid ${getTierColor(player.tier)}` }}
             >
               <div className="player-header">
-                <span className="player-name">{player.name}</span>
+                <span className="player-name">
+                  {player.name}
+                  {player.isRookie && (
+                    <span className="rookie-badge">ROOKIE</span>
+                  )}
+                </span>
                 <span
                   className="position-badge"
                   style={{ backgroundColor: getPositionColor(player.position) }}
@@ -208,7 +213,12 @@ function App() {
                     }}
                   >
                     <div className="player-header">
-                      <span className="player-name">{player.name}</span>
+                      <span className="player-name">
+                        {player.name}
+                        {player.isRookie && (
+                          <span className="rookie-badge">ROOKIE</span>
+                        )}
+                      </span>
                       <span
                         className="position-badge"
                         style={{
