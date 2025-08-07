@@ -599,7 +599,7 @@ export const rankings = [
   {
     id: 67,
     name: "Travis Hunter",
-    position: "WR/CB",
+    position: "WR",
     team: "Jacksonville Jaguars",
     tier: 11,
     overall_ranking: 67,
